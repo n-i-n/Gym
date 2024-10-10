@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdarshFitness - The best fitness gym in the town</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">AdarshFitness</div>
+                <ul class="navbar flex items-center">
+                    <li><a href =index.html>Home</a></li>
+                    <li><a href=about.html>About</a></li>
+                    <li><a href=services.html>Services</a></li>
+                    <li><a href=contact.html>Contact Us</a></li>
+                    <li><a href = join.html><button class="btn">Join Now</button></a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <section>
+                <h1 class="text-center my-2">Join AdarshFitness</h1>
+                <p class="my-2">Ready to take the next step in your fitness journey? Join AdarshFitness today and gain access to our state-of-the-art facilities, expert trainers, and a supportive community. Fill out the form below to get started:</p>
+                <form class="my-2">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <br>
+                    <label for="membership">Membership Type:</label>
+                    <select id="membership" name="membership" required>
+                        <option value="basic">Basic</option>
+                        <option value="premium">Premium</option>
+                        <option value="vip">VIP</option>
+                    </select>
+                    <br>
+                    <button type="submit" class="btn">Join Now</button>
+                </form>
+                <p class="my-2">If you have any questions about our membership options or need assistance, please don't hesitate to <a href="contact.html">contact us</a>.</p>
+            </section>
+        </main>
+        <footer>
+            Copyright &copy; AdarshFitness.com | All rights reserved
+        </footer>
+
+    </div>
+</body>
+
+</html>
