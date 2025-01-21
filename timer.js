@@ -1,12 +1,18 @@
 
-  
-var countDownDate = new Date("October 15, 2024 15:37:25").getTime();
- 
+var today = new Date();
+const currentMonth = today.getMonth();
+const currentYear = today.getFullYear();
+
+const nextMonth = currentMonth === 11 ? 0 : currentMonth + 1;
+const nextMonthYear = currentMonth === 11 ? currentYear + 1 : currentYear;
+
+const targetDate = new Date(nextMonthYear, nextMonth, 1, 0, 0, 0, 0);
+
 var x = setInterval(function() {
  
   var now = new Date().getTime();
  
-  var distance = countDownDate - now;
+  var distance = targetDate - now;
  
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
